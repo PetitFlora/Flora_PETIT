@@ -455,11 +455,9 @@ header {
     margin-bottom: 10px;
 }
 
-.contact-info li img {
-    width: 1em;
-    height: 1em;
-    margin-right: 10px;
-    color: var(--blue);
+.contact-info i {
+    font-size: 1em;
+    margin-right: 8px;
 }
 
 .contact-info a {
