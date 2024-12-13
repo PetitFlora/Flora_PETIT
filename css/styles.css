@@ -284,6 +284,7 @@ header {
     padding: 50px 20px;
     background-color: var(--off-black);
     min-height: 100vh;
+    align-items: center;
     text-align: center;
 }
 
@@ -332,14 +333,13 @@ header {
     background-color: var(--purple);
 }
 
-
-
 /************************************************************ Skills ************************************************************/
 
 #skills-block {
     padding: 50px 20px;
     background-color: var(--off-black);
     min-height: 100vh;
+    align-items: center;
     text-align: center;
 }
 
@@ -417,6 +417,7 @@ header {
     background-color: var(--off-black);
     color: var(--off-white);
     min-height: 100vh;
+    align-items: center;
     text-align: center;
 }
 
@@ -557,6 +558,7 @@ footer {
     color: var(--off-white);
     min-height: 70vh;
     padding: 40px 20px;
+    align-items: center;
     text-align: center;
 }
   
