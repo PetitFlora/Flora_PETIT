@@ -1,229 +1,221 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Flora PETIT</title>
-      <link rel="stylesheet" href="./css/styles.css">
-      <script src="https://kit.fontawesome.com/6389d77eca.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="hamburger" onclick="toggleMenu()">
-        <span>☰</span>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flora PETIT</title>
+        <link rel="stylesheet" href="./css-js/styles.css">
+        <script src="https://kit.fontawesome.com/6389d77eca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span>☰</span>
+            </div>
 
-      <div class="menu">
-        <span><a href="#home">Accueil</a></span>
-        <span><a href="#about">À Propos</a></span>
-        <span><a href="#projects">Projets</a></span>
-        <span><a href="#skills-block">Compétences</a></span>
-        <span><a href="#contact">Contact</a></span>
-      </div>
-    </nav>
+            <div class="menu">
+                <span><a class="underline transition" href="#home">Accueil</a></span>
+                <span><a class="underline transition" href="#about">À Propos</a></span>
+                <span><a class="underline transition" href="#skills">Compétences</a></span>
+                <span><a class="underline" href="./projects-and-expiriances.html">Projets et Experiances</a></span>
+                <span><a class="underline transition" href="#contact">Contact</a></span>
+            </div>
+        </nav>
 
-    <header id="home">
-      <div class="header-content">
-        <h1>Flora PETIT</h1>
-        <p>Étudiante en informatique - Développeuse Full-Stack en devenir</p>
-        <span><a href="#about" class="button">Découvrez mon portfolio</a></span>
-      </div>
-    </header>
+        <header id="home">
+            <div>
+                <h1>Flora PETIT</h1>
+                <h2>Étudiante en informatique - Développeuse Full-Stack en devenir</h2>
+                <h3>Recherche un stage de fin d'année de 2 mois à partir de mi-juin 2025</h3>
+                <span><a class="button transition" href="#about">Découvrir mon portfolio</a></span>
+            </div>
+        </header>
 
-    <section id="about">
-      <div class="container">
-        <div class="about-image">
-          <img src="./images/photo_pro_carre.jpg" alt="Photo de moi">
-        </div>
-        <div class="about-text">
-          <h2>À propos de moi</h2>
-          <p>
-            Étudiante en informatique à <a href="https://www.supinfo.com/" target="_blank">SUPINFO</a>, je suis passionnée par le 
-            développement full-stack et aspire à obtenir mon master.
-            J'ai travaillé sur divers projets, tels qu'un <strong>Casse-brique</strong> et <strong>Star Invaders</strong> en Python.
-            En parallèle, je pratique le crochet et la couture.
-          </p>
-          <span><a href="#projects" class="button">Voir mes projets</a></span>
-        </div>
-      </div>
-    </section>
+        <section id="about">
+                <div class="about-image">
+                    <img src="./images/photo_pro_carre.jpg" alt="Photo de moi">
+                </div>
+                <div class="about-text">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        Étudiante en informatique à <a href="https://www.supinfo.com/" target="_blank">SUPINFO</a>, je suis passionnée par le 
+                        développement full-stack et aspire à obtenir mon master.
+                        J'ai travaillé sur divers projets, tels qu'un <strong>Casse-brique</strong> et <strong>Star Invaders</strong> en Python.
+                        En parallèle, je pratique le crochet et la couture.
+                    </p>
+                    <span><a class="button transition" href="#skills">Mes compétences</a></span>
+                    <span><a class="button transition" href="#contact">Me contacter</a></span>
+                </div>
+        </section>
 
-    <section id="projects">
-      <h2>Mes projets</h2>
-      <p>Découvrez quelques réalisations effectuées durant mon parcours en informatique.</p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Casse-brique</h3>
-          <p>Un jeu casse-brique en Python avec Pygame, basé sur la programmation orientée objet.</p>
-          <a href="https://github.com/PetitFlora/Projet_Python/tree/main/Casse_Brique" target="_blank" class="button">Voir le projet</a>
-        </div>
+        <section id="projects">
+            <h2>Mes projets</h2>
+            <p>Découvrez quelques réalisations effectuées durant mon parcours en informatique.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Casse-brique</h3>
+                    <p>Un jeu casse-brique en Python avec Pygame, basé sur la programmation orientée objet.</p>
+                    <a class="button transition" href="https://github.com/PetitFlora/Projet_Python/tree/main/Casse_Brique" target="_blank">Voir le projet</a>
+                </div>
 
-        <div class="project-card">
-          <h3>Star Invader</h3>
-          <p>Un jeu inspiré de Space Invaders, avec des vaisseaux tirés de l'univers Star Wars.</p>
-          <a href="https://github.com/PetitFlora/Projet_Python/tree/main/Space_Invaders" target="_blank" class="button">Voir le projet</a>
-        </div>
+                <div class="card">
+                    <h3>Star Invader</h3>
+                    <p>Un jeu Space Invaders, avec des vaisseaux de l'univers Star Wars.</p>
+                    <a class="button transition" href="https://github.com/PetitFlora/Projet_Python/tree/main/Space_Invaders" target="_blank">Voir le projet</a>
+                </div>
 
-        <div class="project-card">
-          <h3>Site ArchiFun</h3>
-          <p>Un site web, d'un programme doctoral Marie Curie, pour consulter et postuler à des sujets de thèse.</p>
-          <a href="https://cofund-archifun.univ-lyon1.fr/" target="_blank" class="button">Visiter le site</a>
-        </div>
-      </div>
-    </section>
+                <div class="card">
+                    <h3>Site ArchiFun</h3>
+                    <p>Un site web, d'un programme doctoral Marie Curie, pour consulter et postuler à des sujets de thèse.</p>
+                    <a class="button transition" href="https://cofund-archifun.univ-lyon1.fr/" target="_blank">Visiter le site</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills-block">
-      <h2>Mes compétences</h2>
-      <p>Un aperçu de mes compétences techniques et personnelles</p>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Compétences techniques</h3>
-          <div class="skill-list">
-            <div class="skill">
-              <img src="./images/python-logo.png" alt="Logo Python" class="skill-icon">
-              <h4>Python</h4>
-              <p>Niveau avancé</p>
+        <section id="skills">
+            <h2>Mes compétences</h2>
+            <p>Un aperçu de mes compétences techniques</p>
+            <div class="skills-list">
+                <div class="skill">
+                    <img src="./images/html-logo.png" alt="Logo HTML" class="skill-icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/css-logo.png" alt="Logo CSS" class="skill-icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/js-logo.png" alt="Logo JS" class="skill-icon">
+                    <p>JS</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/PHP-logo.png" alt="Logo PHP" class="skill-icon">
+                    <p>PHP</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/sql-logo.png" alt="Logo SQL" class="skill-icon">
+                    <p>SGBD - SQL</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/PhpMyAdmin-logo.png" alt="Logo phpMyAdin" class="skill-icon">
+                    <p>phpMyAdmin</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/apex-oracle-logo.png" alt="Logo Apex Oracle" class="skill-icon">
+                    <p>Apex Oracle</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/python-logo.png" alt="Logo Python" class="skill-icon">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/pygame-logo.png" alt="Logo Pygame" class="skill-icon">
+                    <p>Pygame</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/tkinter-logo.png" alt="Logo TKinter" class="skill-icon">
+                    <p>Tkinter</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/C-logo.png" alt="Logo C" class="skill-icon">
+                    <p>C</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/vscode-logo.png" alt="Logo VSCode" class="skill-icon">
+                    <p>VSCode</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/git-logo.png" alt="Logo VSCode" class="skill-icon">
+                    <p>Git</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/office-logo.png" alt="Logo Pack Office" class="skill-icon">
+                    <p>Pack Office</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/clip-logo.png" alt="Logo Clip Studio Paint" class="skill-icon">
+                    <p>Clip Studio Paint</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/france-icon.png" alt="Drapeau Français" class="skill-icon">
+                    <p>Français</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/england-icon.png" alt="Drapeau Anglais" class="skill-icon">
+                    <p>Anglais C1</p>
+                </div>
             </div>
-            <div class="skill">
-              <img src="./images/pygame-logo.png" alt="Logo Pygame" class="skill-icon">
-              <h4>Pygame</h4>
-              <p>Niveau avancé</p>
-            </div>
-            <div class="skill">
-              <img src="./images/html-logo.png" alt="Logo HTML" class="skill-icon">
-              <h4>HTML</h4>
-              <p>Niveau avancé</p>
-            </div>
-            <div class="skill">
-              <img src="./images/css-logo.png" alt="Logo CSS" class="skill-icon">
-              <h4>CSS</h4>
-              <p>Niveau intermédiaire</p>
-            </div>
-            <div class="skill">
-              <img src="./images/js-logo.png" alt="Logo JS" class="skill-icon">
-              <h4>JS</h4>
-              <p>Niveau débutant</p>
-            </div>
-            <div class="skill">
-              <img src="./images/sql-logo.png" alt="Logo SQL" class="skill-icon">
-              <h4>SQL</h4>
-              <p>Niveau débutant</p>
-            </div>
-            <div class="skill">
-              <img src="./images/office-logo.png" alt="Logo Pack Office" class="skill-icon">
-              <h4>Pack Office</h4>
-              <p>Niveau intermédiaire</p>
-            </div>
-            <div class="skill">
-              <img src="./images/clip-logo.png" alt="Logo Clip Studio Paint" class="skill-icon">
-              <h4>Clip Studio Paint</h4>
-              <p>Niveau avancé</p>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="skill-card">
-          <h3>Compétences personnelles</h3>
-          <div class="skill-list">
-            <div class="skill">
-              <i class="fa-solid fa-clipboard-list"></i>
-              <h4>Organization</h4>
-            </div>
-            <div class="skill">
-              <i class="fa-solid fa-palette"></i>
-              <h4>Créativité</h4>
-            </div>
-            <div class="skill">
-              <i class="fa-solid fa-people-group"></i>
-              <h4>Travaille en équipe</h4>
-            </div>
-          </div>
-        </div>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Vous souhaitez me poser une question ? Je suis à votre écoute !</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Mes coordonnées</h3>
+                    <ul>
+                        <li><a class="underline" href="mailto:florapetit.pro@gmail.com"><i class="fa-solid fa-envelope"></i>florapetit.pro@gmail.com</a></li>
+                        <li><a class="underline" href="tel:+33767370469"><i class="fa-solid fa-phone"></i>+33 7 67 37 04 69</a></li>
+                        <li><i class="fa-solid fa-map-location-dot"></i>69100, Villeurbanne, France</li>
+                    </ul>
+                </div>
+                
+                <form action="https://api.web3forms.com/submit" method="post" class="contact-form" id="form">
 
-        <div class="skill-card">
-          <h3>Compétences linguistiques</h3>
-          <div class="skill-list">
-            <div class="skill">
-              <img src="./images/france-icon.png" alt="Drapeau Français" class="skill-icon">
-              <h4>Français</h4>
-              <p>Langue maternelle</p>
-            </div>
-            <div class="skill">
-              <img src="./images/england-icon.png" alt="Drapeau Anglais" class="skill-icon">
-              <h4>Anglais</h4>
-              <p>C1</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <input type="hidden" name="access_key" value="d42999ed-f981-4271-aa99-c5a34ba891c1">
 
-    <section id="contact">
-      <h2>Contactez-moi</h2>
-      <p>Vous souhaitez me poser une question ? Je suis à votre écoute !</p>
-      
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Mes coordonnées</h3>
-          <ul>
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:petitflora14@gmail.com">petitflora14@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone"></i><a href="tel:+33767370469">+33 7 67 37 04 69</a></li>
-            <li><i class="fa-solid fa-map-location-dot"></i>69100, Villeurbanne, France</li>
-          </ul>
-        </div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" autocomplete="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="contactPermission" name="contactPermission" required>
+                        <label for="contactPermission">J'accepte d'être recontacté(e) par email.</label>
+                    </div>
+
+                    <button class="button" type="submit">Envoyer</button>
+
+                    <div id="result"></div>
+                </form>
+            </div>
+        </section>
         
-        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
-
-          <input type="hidden" name="access_key" value="361656a5-8bde-4712-8a88-8be3737f17c4">
-
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required>
-
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" placeholder="Votre email" autocomplete="email" required>
-
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
-
-          <div class="checkbox-container">
-              <input type="checkbox" id="contactPermission" name="contactPermission" required>
-              <label for="contactPermission">J'accepte d'être recontacté(e) par email.</label>
-          </div>
-
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </section>
-        
-      <footer>
-          <div class="footer-container">
-            <div class="footer-links">
-              <h3>Liens utiles</h3>
-              <ul>
-                <li><span><a href="#home">Accueil</a></span></li>
-                <li><span><a href="#about">À propos</a></span></li>
-                <li><span><a href="#projects">Projets</a></span></li>
-                <li><span><a href="#skills-block">Compétences</a></span></li>
-                <li><span><a href="#contact">Contact</a></span></li>
-              </ul>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><span><a class="underline transition" href="#home">Accueil</a></span></li>
+                        <li><span><a class="underline transition" href="#about">À propos</a></span></li>
+                        <li><span><a class="underline transition" href="#skills">Compétences</a></span></li>
+                        <li><span><a class="underline" href="./projects-and-expiriances.html">Projets et Experiances</a></span></li>
+                        <li><span><a class="underline transition" href="#contact">Contact</a></span></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-socials">
+                    <h3>Suivez-moi</h3>
+                    <ul>
+                        <li><a class="underline transition" href="https://www.linkedin.com/in/flora-petit-b9a53532a/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                        <li><a class="underline transition" href="https://github.com/PetitFlora" target="_blank"><i class="fa-brands fa-square-github"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-copyright">
+                    <p>&copy; 2024-2025 PETIT Flora</p>
+                    <!-- <p><a href="/mentions-legales">Mentions légales</a> | <a href="/politique-confidentialite">Politique de confidentialité</a></p> -->
+                </div>
             </div>
+        </footer>
         
-            <div class="footer-socials">
-              <h3>Suivez-moi</h3>
-              <ul>
-                <li><a href="https://www.linkedin.com/in/flora-petit-b9a53532a/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
-                <li><a href="https://github.com/PetitFlora" target="_blank"><i class="fa-brands fa-square-github"></i>GitHub</a></li>
-              </ul>
-            </div>
-        
-            <div class="footer-copyright">
-              <p>&copy; 2024 PETIT Flora - Tous droits réservés</p>
-              <!-- <p><a href="/mentions-legales">Mentions légales</a> | <a href="/politique-confidentialite">Politique de confidentialité</a></p> -->
-            </div>
-          </div>
-      </footer>
-        
-        <script src="./css/menu.js"></script>
-        <script src="./css/transitions.js"></script>
-  </body>
+        <script src="./css-js/menu.js"></script>
+        <script src="./css-js/transitions.js"></script>
+        <script src="./css-js/form.js"></script>
+    </body>
 </html>

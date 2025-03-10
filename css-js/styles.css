@@ -1,0 +1,425 @@
+/********************************************************* Général **********************************************************/
+
+:root {
+    --off-white: #faf9f6;
+    --off-black: #313134;
+
+    --teal: #4ac6be;
+    --light-blue: #61b8e7;
+    --blue: #8babf1;
+    --blue-purple: #968cee;
+    --purple: #bc88df;
+}
+
+@font-face {
+    font-family: 'LexieReadable';
+    src: url('../font/LexieReadable-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LexieReadable';
+    src: url('../font/LexieReadable-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'LexieReadable', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    color: var(--off-white);
+    background-color: var(--off-black);
+}
+
+section {
+    padding: 50px 10px;
+    margin: 10px 0px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.4fr));
+    gap: 20px;
+}
+
+.card {
+    height: fit-content;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+/********************************************************** Texts ************************************************************/
+
+h1 {
+    font-size: 3em;
+    color: var(--light-blue);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+h3, .footer-copyright p {
+    color: var(--blue-purple);
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1em;
+    color: var(--purple);
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+i {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+/********************************************************** Links ************************************************************/
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: inherit;
+    color: var(--teal);
+    text-decoration: none;
+    border-radius: 10px;
+    border: var(--teal) solid 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--teal);
+    color: var(--off-black);
+}
+
+a {
+    color: inherit;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: var(--teal);
+}
+
+.underline {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.underline:hover {
+    color: var(--teal);
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--teal);
+    transition: width 0.2s ease;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+/************************************************************ Menu *************************************************************/
+
+nav {
+    background-color: var(--off-black);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3;
+}
+
+.hamburger span {
+    color: var(--off-white);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu span {
+        margin: 0;
+    }
+
+    nav .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--off-black);
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav .menu.open {
+        display: flex;
+    }
+
+    nav .menu span {
+        margin: 10px 0;
+    }
+}
+
+/************************************************************ Header ************************************************************/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+/************************************************************ About ************************************************************/
+
+#about {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/************************************************************ Skills ************************************************************/
+
+.skills-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    padding: 10px 0px;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+
+/********************************************************** Projects ***********************************************************/
+
+.sort-bar {
+    margin-bottom: 30px;
+}
+
+/********************************************************** Contact ************************************************************/
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    text-align: left;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    font-size: 1em;
+    margin-right: 8px;
+}
+
+.contact-form {
+    padding: 10px 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--off-white);
+    color: var(--off-black);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--off-black);
+    opacity: 0.6;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--off-white);
+    margin-top: 20px;
+}
+
+.checkbox-container input {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-container label {
+    font-size: 1rem;
+}
+
+.checkbox-container input:checked + label {
+    color: var(--purple);
+}
+
+/************************************************************ Footer ************************************************************/
+
+footer {
+    background-color: var(--off-black);
+    color: var(--off-white);
+    min-height: 70vh;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-socials,
+.footer-copyright {
+    flex: 1;
+}
+
+.footer-links ul,
+.footer-socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
