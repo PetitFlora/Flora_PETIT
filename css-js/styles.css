@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'LexieReadable', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
     line-height: 1.5;
     color: var(--off-white);
@@ -89,10 +89,6 @@ h4 {
     color: var(--purple);
 }
 
-p {
-    margin-bottom: 30px;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -103,7 +99,7 @@ li {
 }
 
 i {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-right: 10px;
 }
 
@@ -112,7 +108,7 @@ i {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin-right: 10px;
+    width: 100%;
     background-color: inherit;
     color: var(--teal);
     text-decoration: none;
@@ -122,9 +118,19 @@ i {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+.button:not([type="submit"]) {
+    width: fit-content;
+}
+
 .button:hover {
     background-color: var(--teal);
     color: var(--off-black);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 a {
@@ -137,7 +143,9 @@ a:hover {
 }
 
 .underline {
+    display: inline-block;
     color: inherit;
+    width: fit-content;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -266,23 +274,26 @@ header {
 
 /************************************************************ Skills ************************************************************/
 
-.skills-list {
+#skills-list {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 170px;
-    padding: 10px 0px;
+    position: relative;
 }
 
 .skill-icon {
     width: 50px;
     height: 50px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -307,6 +318,10 @@ header {
 .contact-info {
     flex: 1 1 300px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 20px;
 }
 
 .contact-info ul {
@@ -317,7 +332,7 @@ header {
 .contact-info li {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -327,7 +342,7 @@ header {
 }
 
 .contact-form {
-    padding: 10px 20px;
+    margin: 10px 20px;
     flex: 1 1 300px;
     display: flex;
     flex-direction: column;
@@ -340,9 +355,13 @@ header {
     color: var(--purple);
 }
 
+.contact-form textarea {
+    display: inline-block;
+    resize: vertical;
+}
+
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -357,8 +376,7 @@ header {
 }
 
 .checkbox-container {
-    display: flex;
-    align-items: center;
+    text-align: left;
     gap: 10px;
     font-size: 1rem;
     color: var(--off-white);
@@ -366,8 +384,9 @@ header {
 }
 
 .checkbox-container input {
-    width: 20px;
-    height: 20px;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0;
 }
 
 .checkbox-container label {
@@ -401,17 +420,10 @@ footer {
 .footer-socials,
 .footer-copyright {
     flex: 1;
-}
-
-.footer-links ul,
-.footer-socials ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li,
-.footer-socials li {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
 }
 
 .footer-copyright {
