@@ -51,77 +51,40 @@
         <section id="skills">
             <h2>Mes compétences</h2>
             <p>Un aperçu de mes compétences techniques</p>
-            <div class="skills-list">
-                <div class="skill">
-                    <img src="./images/html-logo.png" alt="Logo HTML" class="skill-icon">
-                    <p>HTML</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/css-logo.png" alt="Logo CSS" class="skill-icon">
-                    <p>CSS</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/js-logo.png" alt="Logo JS" class="skill-icon">
-                    <p>JS</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/PHP-logo.png" alt="Logo PHP" class="skill-icon">
-                    <p>PHP</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/sql-logo.png" alt="Logo SQL" class="skill-icon">
-                    <p>SGBD - SQL</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/PhpMyAdmin-logo.png" alt="Logo phpMyAdin" class="skill-icon">
-                    <p>phpMyAdmin</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/apex-oracle-logo.png" alt="Logo Apex Oracle" class="skill-icon">
-                    <p>Apex Oracle</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/python-logo.png" alt="Logo Python" class="skill-icon">
-                    <p>Python</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/pygame-logo.png" alt="Logo Pygame" class="skill-icon">
-                    <p>Pygame</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/tkinter-logo.png" alt="Logo TKinter" class="skill-icon">
-                    <p>Tkinter</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/C-logo.png" alt="Logo C" class="skill-icon">
-                    <p>C</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/vscode-logo.png" alt="Logo VSCode" class="skill-icon">
-                    <p>VSCode</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/git-logo.png" alt="Logo VSCode" class="skill-icon">
-                    <p>Git</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/office-logo.png" alt="Logo Pack Office" class="skill-icon">
-                    <p>Pack Office</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/clip-logo.png" alt="Logo Clip Studio Paint" class="skill-icon">
-                    <p>Clip Studio Paint</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/france-icon.png" alt="Drapeau Français" class="skill-icon">
-                    <p>Français</p>
-                </div>
-                <div class="skill">
-                    <img src="./images/england-icon.png" alt="Drapeau Anglais" class="skill-icon">
-                    <p>Anglais C1</p>
-                </div>
+            <div class="skills-list" id="skills-list">
             </div>
         </section>
+        <script>
+            function displayHardSkills(skills) {
+                const container = document.getElementById('skills-list');
+                skills.forEach(skill => {
+                    const div = document.createElement('div');
+                    div.className = "skill";
+                    const img = document.createElement('img');
+                    img.src = skill.image;
+                    img.alt = skill.altText;
+                    img.className = "skill-icon";
+                    const p = document.createElement('p');
+                    p.textContent = `${skill.name}`;
+                    div.appendChild(img);
+                    div.appendChild(p);
+                    container.appendChild(div);
+                });
+            }
+
+            fetch('./json/competences.json')
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(res.statusText);
+                    }
+                    return res.json()
+                })
+                .then(data => {
+                    console.log(data);
+                    displayHardSkills(data);
+                })
+                .catch(error => console.error("There was an error:", error));
+        </script>
 
         <section id="contact">
             <h2>Contactez-moi</h2>

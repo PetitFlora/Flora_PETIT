@@ -1,92 +1,92 @@
-{
-    "laravel": {
+[
+    {
         "name": "Laravel",
         "image": "./images/laravel-logo.png",
         "altText": "Logo PHP",
         "category": "Web Development"
     },
-    "php": {
+    {
         "name": "PHP",
         "image": "./images/PHP-logo.png",
         "altText": "Logo PHP",
         "category": "Web Development"
     },
-    "html": {
+    {
         "name": "HTML",
         "image": "./images/html-logo.png",
         "altText": "Logo HTML",
         "category": "Web Development"
     },
-    "css": {
+    {
         "name": "CSS",
         "image": "./images/css-logo.png",
         "altText": "Logo CSS",
         "category": "Web Development"
     },
-    "js": {
+    {
         "name": "JavaScript",
         "image": "./images/js-logo.png",
         "altText": "Logo JavaScript",
         "category": "Web Development"
     },
-    "sgbd": {
+    {
         "name": "SGBD - SQL",
         "image": "./images/sql-logo.png",
         "altText": "Logo SQL",
         "category": "Database"
     },
-    "phpmyadmin": {
+    {
         "name": "phpMyAdmin",
         "image": "./images/PhpMyAdmin-logo.png",
         "altText": "Logo phpMyAdmin",
         "category": "Database"
     },
-    "oracle": {
+    {
         "name": "Apex Oracle",
         "image": "./images/apex-oracle-logo.png",
         "altText": "Logo Apex Oracle",
         "category": "Database"
     },
-    "c": {
+    {
         "name": "C",
         "image": "./images/C-logo.png",
         "altText": "Logo C",
         "category": "Development"
     },
-    "python": {
+    {
         "name": "Python",
         "image": "./images/python-logo.png",
         "altText": "Logo Python",
         "category": "Development"
     },
-    "vscode": {
+    {
         "name": "VSCode",
         "image": "./images/vscode-logo.png",
         "altText": "Logo VSCode",
         "category": "Software"
     },
-    "git": {
+    {
         "name": "Git/GitHub",
         "image": "./images/git-logo.png",
         "altText": "Logo GitHub",
         "category": "Software"
     },
-    "office": {
+    {
         "name": "Pack Office",
         "image": "./images/office-logo.png",
         "altText": "Logo CSS",
         "category": "Software"
     },
-    "francais": {
+    {
         "name": "Français",
-        "image": "./images/france-logo.png",
+        "image": "./images/france-icon.png",
         "altText": "Drapeau Français",
         "category": "Language"
     },
-    "anglais": {
+    {
         "name": "Anglais",
-        "image": "./images/england-logo.png",
+        "image": "./images/england-icon.png",
         "altText": "Drapeau Anglais",
         "category": "Language"
     }
-}
+]
