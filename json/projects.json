@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Site Archifun",
+        "start-date": "2024-01",
+        "end-date": "2025-03",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JS",
+            "PHP",
+            "SQL",
+            "phpMyAdmin",
+            "VSCode",
+            "Pack Office"
+        ],
+        "description": "Site web, du programme doctoral Marie Curie, ArchiFun, pour consulter et postuler aux sujets de thèse.",
+        "link": "https://cofund-archifun.univ-lyon1.fr/"
+    }
+]
