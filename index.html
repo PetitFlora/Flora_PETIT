@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/6389d77eca.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <script src="./css-js/requests.js"></script>
         <nav>
             <div class="hamburger" onclick="toggleMenu()">
                 <span>☰</span>
@@ -17,7 +18,7 @@
                 <span><a class="underline transition" href="#home">Accueil</a></span>
                 <span><a class="underline transition" href="#about">À Propos</a></span>
                 <span><a class="underline transition" href="#skills">Compétences</a></span>
-                <span><a class="underline" href="./projects-and-expiriances.html">Projets et Experiances</a></span>
+                <span><a class="underline" href="./projects.html">Projets</a></span>
                 <span><a class="underline transition" href="#contact">Contact</a></span>
             </div>
         </nav>
@@ -42,7 +43,7 @@
                         En parallèle, je pratique le crochet et la couture.</p>
                     <div class="buttons">
                         <a class="button transition" href="#skills">Mes compétences</a>
-                        <a class="button transition" href="#contact">Me contacter</a>
+                        <a class="button transition" href="#projects">Mes projets récent</a>
                     </div>
                 </div>
         </section>
@@ -50,27 +51,9 @@
         <section id="skills">
             <h2>Mes compétences</h2>
             <p>Un aperçu de mes compétences techniques</p>
-            <div id="skills-list">
-            </div>
+            <div id="skills-list"></div>
         </section>
         <script>
-            function displayHardSkills(skills) {
-                const container = document.getElementById('skills-list');
-                skills.forEach(skill => {
-                    const div = document.createElement('div');
-                    div.className = "skill";
-                    const img = document.createElement('img');
-                    img.src = skill.image;
-                    img.alt = skill.altText;
-                    img.className = "skill-icon";
-                    const p = document.createElement('p');
-                    p.textContent = `${skill.name}`;
-                    div.appendChild(img);
-                    div.appendChild(p);
-                    container.appendChild(div);
-                });
-            }
-
             fetch('./json/competences.json')
                 .then(res => {
                     if (!res.ok) {
@@ -79,8 +62,28 @@
                     return res.json()
                 })
                 .then(data => {
-                    console.log(data);
                     displayHardSkills(data);
+                })
+                .catch(error => console.error("There was an error:", error));
+        </script>
+
+        <section id="projects">
+            <h2>Mes projets récents</h2>
+            <p>Un aperçu de mes projets récents</p>
+            <div id="projects-list" class="grid"></div>
+        </section>
+        <script>
+            fetch('./json/projects.json')
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error(res.statusText);
+                    }
+                    return res.json()
+                })
+                .then(data => {
+                    data.sort((a, b) => (a.enddate < b.enddate ? 1 : -1));
+                    first3 = data.slice(0, 3);
+                    displayProjects(first3);
                 })
                 .catch(error => console.error("There was an error:", error));
         </script>
@@ -129,7 +132,7 @@
                         <a class="underline transition" href="#home">Accueil</a>
                         <a class="underline transition" href="#about">À propos</a>
                         <a class="underline transition" href="#skills">Compétences</a>
-                        <a class="underline" href="./projects-and-expiriances.html">Projets et Experiances</a>
+                        <a class="underline" href="./projects.html">Projets</a>
                         <a class="underline transition" href="#contact">Contact</a>
                 </div>
             

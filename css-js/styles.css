@@ -37,7 +37,7 @@ body {
 }
 
 section {
-    padding: 50px 10px;
+    padding: 50px;
     margin: 10px 0px;
     min-height: 100vh;
     justify-content: center;
@@ -53,17 +53,38 @@ section {
 }
 
 .card {
-    height: fit-content;
     text-align: left;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3, .card h4, .card h5, .card p,.card div  {
+    margin: 10px 20px;
+}
+
+.card div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.card div .button {
+    padding: 10px;
 }
 
 /************************************ Texts ***********************************/
@@ -75,6 +96,7 @@ h1 {
 }
 
 h2 {
+    font-size: 2em;
     color: var(--blue);
     margin-bottom: 15px;
 }

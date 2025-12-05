@@ -1,19 +1,144 @@
 [
     {
         "title": "Site Archifun",
-        "start-date": "2024-01",
-        "end-date": "2025-03",
+        "image": null,
+        "alt": null,
+        "startdate": "2024-01",
+        "enddate": "2025-03",
+        "time": null,
+        "affiliation": null,
         "technologies": [
-            "HTML",
-            "CSS",
-            "JS",
-            "PHP",
-            "SQL",
-            "phpMyAdmin",
-            "VSCode",
-            "Pack Office"
+            ["HTML", false],
+            ["CSS", false],
+            ["JavaScript", true],
+            ["PHP", true],
+            ["SQL", false],
+            ["phpMyAdmin", true],
+            ["VSCode", false]
         ],
-        "description": "Site web, du programme doctoral Marie Curie, ArchiFun, pour consulter et postuler aux sujets de thèse.",
-        "link": "https://cofund-archifun.univ-lyon1.fr/"
+        "smalldescription": "Site web, du programme doctoral Marie Curie, ArchiFun, pour consulter et postuler aux sujets de thèse.",
+        "longdescription": "Site web, du programme doctoral Marie Curie, ArchiFun, pour consulter et postuler aux sujets de thèse.",
+        "link": ["site", "https://cofund-archifun.univ-lyon1.fr/"]
+    },
+    {
+        "title": "Stage de fin de première année",
+        "image": null,
+        "alt": null,
+        "startdate": "2025-06",
+        "enddate": "2025-07",
+        "time": "2 mois",
+        "affiliation": "stage",
+        "technologies": [
+            ["Laravel", true],
+            ["PHP", true],
+            ["HTML", false],
+            ["CSS", false],
+            ["JavaScript", true],
+            ["SGBD", true],
+            ["SQL", false],
+            ["phpMyAdmin", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Stage de deux mois. Refonte complète du site vitrine de l'équipe de recherche BIOSYS. Ajout d'un Intranet avec rôle administrateur et modification du contenu des pages.",
+        "longdescription": "Stage de deux mois. Refonte complète du site vitrine de l'équipe de recherche BIOSYS. Ajout d'un Intranet avec rôle administrateur et modification du contenu des pages.",
+        "link": ["site", "https://nmrbiolchem.univ-lyon1.fr/home"]
+    },
+    {
+        "title": "Laying Grass",
+        "image": null,
+        "alt": null,
+        "startdate": null,
+        "enddate": "2025-11",
+        "time": "2 semaines",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["C++", true],
+            ["CMake", true],
+            ["Git/GitHub", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Création du jeu Laying Grass en C++, interface CLI, POO, CMake. Dans Laying Grass, les joueurs doivent placer des tuiles d'herbe sur un plateau en forme de grille afin d'étendre leur territoire, dans le but de créer le plus grand territoire carré possible.",
+        "longdescription": "Création du jeu Laying Grass en C++, interface CLI, POO, CMake. Dans Laying Grass, les joueurs doivent placer des tuiles d'herbe sur un plateau en forme de grille afin d'étendre leur territoire, dans le but de créer le plus grand territoire carré possible.",
+        "link": ["projet sur GitHub", null],
+        "technical-doc": null,
+        "user-doc": null
+    },
+    {
+        "title": "Katarenga",
+        "image": null,
+        "alt": null,
+        "startdate": "2024-12",
+        "enddate": "2025-06",
+        "time": "5 mois",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["C", true],
+            ["CMake", true],
+            ["Git/GitHub", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Projet de fin d'année en groupe de 3, adaptation du jeu éponyme en application. Compatibilité avec Windows, Linux et Mac. Utilisation du langage C avec la librairie SDL3.",
+        "longdescription": "Projet de fin d'année en groupe de 3, adaptation du jeu éponyme en application. Compatibilité avec Windows, Linux et Mac. Utilisation du langage C avec la librairie SDL3.",
+        "link": ["projet sur GitHub", null],
+        "technical-doc": null,
+        "user-doc": null
+    },
+    {
+        "title": "Projet SGBD",
+        "image": null,
+        "alt": null,
+        "startdate": null,
+        "enddate": "2025-02",
+        "time": "2 semaines",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["SGBD", true],
+            ["SQL", true],
+            ["Apex Oracle", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Projet de fin de module, base de données pour une école",
+        "longdescription": "Projet de fin de module, base de données pour une école",
+        "link": ["projet sur GitHub", "https://github.com/PetitFlora/1SGBD"],
+        "technical-doc": null,
+        "user-doc": null
+    },
+    {
+        "title": "Supemon",
+        "image": null,
+        "alt": null,
+        "startdate": null,
+        "enddate": "2025-01",
+        "time": "2 semaines",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["C", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Projet de fin de module, jeu pokemon jouable dans un terminal.",
+        "longdescription": "Projet de fin de module, jeu pokemon jouable dans un terminal.",
+        "link": ["projet sur GitHub", "https://github.com/PetitFlora/1CDEV-Supemon"],
+        "technical-doc": null,
+        "user-doc": null
+    },
+    {
+        "title": "CineInfos",
+        "image": null,
+        "alt": null,
+        "startdate": null,
+        "enddate": "2025-01",
+        "time": "2 semaines",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["HTML", false],
+            ["CSS", false],
+            ["JavaScript", true],
+            ["VSCode", false]
+        ],
+        "smalldescription": "Site permettant de chercher des films et de lire ses informations. Utilisation de l'API OMDb.",
+        "longdescription": "Site permettant de chercher des films et de lire ses informations. Utilisation de l'API OMDb.",
+        "link": ["projet sur GitHub", "https://github.com/PetitFlora/1WEBD-CineInfos"],
+        "technical-doc": null,
+        "user-doc": null
     }
 ]
