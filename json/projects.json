@@ -8,11 +8,13 @@
         "time": "2 semaines",
         "affiliation": "SUPINFO",
         "technologies": [
-            ["JAVA", true],
+            ["C++", true],
+            ["SFML", true],
             ["Git/GitHub", false]
         ],
-        "smalldescription": "Application permettant aux utilisateurs d'accéder aux informations relatives au stock de leur magasin et d'ajouter ou de retirer des articles.",
-        "link": ["projet sur GitHub", null]
+        "smalldescription": "Jeu de stratégie de conflit et de conquête inspiré de Risk, auquel peuvent jouer de 2 à 8 joueurs en ligne et/ou contre des bots.",
+        "link": ["projet sur GitHub", null],
+        "starring": true
     },
     {
         "title": "IStore",
@@ -27,7 +29,8 @@
             ["Git/GitHub", false]
         ],
         "smalldescription": "Application permettant aux utilisateurs d'accéder aux informations relatives au stock de leur magasin et d'ajouter ou de retirer des articles.",
-        "link": ["projet sur GitHub", null]
+        "link": ["projet sur GitHub", null],
+        "starring": false
     },
     {
         "title": "Site Archifun",
@@ -45,7 +48,8 @@
             ["SQL", false]
         ],
         "smalldescription": "Site web, du programme doctoral Marie Curie, ArchiFun, pour consulter et postuler aux sujets de thèse.",
-        "link": ["site", "https://cofund-archifun.univ-lyon1.fr/"]
+        "link": ["site", "https://cofund-archifun.univ-lyon1.fr/"],
+        "starring": false
     },
     {
         "title": "Stage de fin de première année",
@@ -65,7 +69,8 @@
             ["SQL", false]
         ],
         "smalldescription": "Stage de deux mois. Refonte complète du site vitrine de l'équipe de recherche BIOSYS. Ajout d'un Intranet avec rôle administrateur et modification du contenu des pages.",
-        "link": ["site", "https://nmrbiolchem.univ-lyon1.fr/home"]
+        "link": ["site", "https://nmrbiolchem.univ-lyon1.fr/home"],
+        "starring": true
     },
     {
         "title": "Laying Grass",
@@ -77,10 +82,9 @@
         "affiliation": "SUPINFO",
         "technologies": [
             ["C++", true],
-            ["CMake", true],
             ["Git/GitHub", true]
         ],
-        "smalldescription": "Création du jeu Laying Grass en C++, interface CLI, POO, CMake. Dans Laying Grass, les joueurs doivent placer des tuiles d'herbe sur un plateau en forme de grille afin d'étendre leur territoire, dans le but de créer le plus grand territoire carré possible.",
+        "smalldescription": "Création du jeu Laying Grass en C++, interface CLI, POO. Dans Laying Grass, les joueurs doivent placer des tuiles d'herbe sur un plateau en forme de grille afin d'étendre leur territoire, dans le but de créer le plus grand territoire carré possible.",
         "link": ["projet sur GitHub", null],
         "technical-doc": null,
         "user-doc": null
@@ -95,13 +99,13 @@
         "affiliation": "SUPINFO",
         "technologies": [
             ["C", true],
-            ["CMake", true],
             ["Git/GitHub", true]
         ],
         "smalldescription": "Projet de fin d'année en groupe de 3, adaptation du jeu éponyme en application. Compatibilité avec Windows, Linux et Mac. Utilisation du langage C avec la librairie SDL3.",
         "link": ["projet sur GitHub", null],
         "technical-doc": null,
-        "user-doc": null
+        "user-doc": null,
+        "starring": true
     },
     {
         "title": "Projet SGBD",
@@ -120,7 +124,8 @@
         "smalldescription": "Projet de fin de module, base de données pour une école",
         "link": ["projet sur GitHub", "https://github.com/PetitFlora/1SGBD"],
         "technical-doc": null,
-        "user-doc": null
+        "user-doc": null,
+        "starring": false
     },
     {
         "title": "Supemon",
@@ -137,7 +142,8 @@
         "smalldescription": "Projet de fin de module, jeu pokemon jouable dans un terminal.",
         "link": ["projet sur GitHub", "https://github.com/PetitFlora/1CDEV-Supemon"],
         "technical-doc": null,
-        "user-doc": null
+        "user-doc": null,
+        "starring": false
     },
     {
         "title": "CineInfos",
@@ -156,6 +162,7 @@
         "smalldescription": "Site type IMDb permettant de chercher des films et de lire ses informations. Utilisation de l'API OMDb.",
         "link": ["projet sur GitHub", "https://github.com/PetitFlora/1WEBD-CineInfos"],
         "technical-doc": null,
-        "user-doc": null
+        "user-doc": null,
+        "starring": false
     }
 ]

@@ -81,9 +81,10 @@
                     return res.json()
                 })
                 .then(data => {
-                    data.sort((a, b) => (a.enddate < b.enddate ? 1 : -1));
-                    first3 = data.slice(0, 3);
-                    displayProjects(first3);
+                    let selected = data.filter(project => project.starring === true)
+                    console.log(selected);
+                    selected.sort((a, b) => (a.enddate < b.enddate ? 1 : -1));
+                    displayProjects(selected);
                 })
                 .catch(error => console.error("There was an error:", error));
         </script>

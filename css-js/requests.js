@@ -33,8 +33,8 @@ function displayProjects(projects) {
 
         const technos = document.createElement('h4');
         project.technologies.forEach(techno => {
-            if (techno[1] == true) {
-                if (technos.textContent != "") { technos.textContent += `, `; }
+            if (techno[1] === true) {
+                if (technos.textContent !== "") { technos.textContent += `, `; }
                 technos.textContent += techno[0];
             }
         });
@@ -42,10 +42,9 @@ function displayProjects(projects) {
         const h5 = document.createElement('h5');
         if (project.startdate == null) {
             const [year, month] = project.enddate.split("-");
-            const date = new Date(year, month - 1); 
-            const end = date.toLocaleString("fr-FR", {month: "short", year: "numeric"});
-            h5.textContent = end;
-        } else if (project.enddate == "today") {
+            const date = new Date(year, month - 1);
+            h5.textContent = date.toLocaleString("fr-FR", {month: "short", year: "numeric"});
+        } else if (project.enddate === "today") {
             const [year, month] = project.startdate.split("-");
             const date = new Date(year, month - 1); 
             const start = date.toLocaleString("fr-FR", {month: "short", year: "numeric"});
@@ -64,7 +63,7 @@ function displayProjects(projects) {
         p.textContent = project.smalldescription;
 
         const buttons = document.createElement('div');
-        buttons.innerHTML = `<a class="button" href="#">En savoir plus</a>`;
+        // buttons.innerHTML = `<a class="button" href="#">En savoir plus</a>`;
         if (project.link[1] != null) {
             buttons.innerHTML += `<a class="button" href="${project.link[1]}">Voir le ${project.link[0]}</a>`;
         }
