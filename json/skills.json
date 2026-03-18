@@ -1,14 +1,20 @@
 [
     {
+        "name": "PHP",
+        "image": "./images/PHP-logo.png",
+        "altText": "Logo PHP",
+        "category": "Web Development"
+    },
+    {
         "name": "Laravel",
         "image": "./images/laravel-logo.png",
         "altText": "Logo PHP",
         "category": "Web Development"
     },
     {
-        "name": "PHP",
-        "image": "./images/PHP-logo.png",
-        "altText": "Logo PHP",
+        "name": "Symfony",
+        "image": "./images/symfony-logo.png",
+        "altText": "Logo Symfony",
         "category": "Web Development"
     },
     {
@@ -30,21 +36,15 @@
         "category": "Web Development"
     },
     {
-        "name": "SGBD - SQL",
+        "name": "React",
+        "image": "./images/react-logo.png",
+        "altText": "Logo React",
+        "category": "Web Development"
+    },
+    {
+        "name": "SQL",
         "image": "./images/sql-logo.png",
         "altText": "Logo SQL",
-        "category": "Database"
-    },
-    {
-        "name": "phpMyAdmin",
-        "image": "./images/PhpMyAdmin-logo.png",
-        "altText": "Logo phpMyAdmin",
-        "category": "Database"
-    },
-    {
-        "name": "Apex Oracle",
-        "image": "./images/apex-oracle-logo.png",
-        "altText": "Logo Apex Oracle",
         "category": "Database"
     },
     {
@@ -54,16 +54,22 @@
         "category": "Development"
     },
     {
+        "name": "C++",
+        "image": "./images/Cpp-logo.png",
+        "altText": "Logo C++",
+        "category": "Development"
+    },
+    {
         "name": "Python",
         "image": "./images/python-logo.png",
         "altText": "Logo Python",
         "category": "Development"
     },
     {
-        "name": "VSCode",
-        "image": "./images/vscode-logo.png",
-        "altText": "Logo VSCode",
-        "category": "Software"
+        "name": "Java",
+        "image": "./images/java-logo.png",
+        "altText": "Logo Java",
+        "category": "Development"
     },
     {
         "name": "Git/GitHub",
@@ -72,9 +78,34 @@
         "category": "Software"
     },
     {
-        "name": "Pack Office",
-        "image": "./images/office-logo.png",
-        "altText": "Logo CSS",
+        "name": "VMWare",
+        "image": "./images/vmware-logo.png",
+        "altText": "Logo VMWare",
+        "category": "Software"
+    },
+    {
+        "name": "Windows Server",
+        "image": "./images/windows-logo.png",
+        "altText": "Logo Windows",
+        "category": "Software"
+    },
+    {
+        "name": "AWS",
+        "image": "./images/aws-logo.png",
+        "altText": "Logo AWS",
+        "category": "Software"
+    },
+    {
+        "name": "Debian",
+        "image": "./images/debian-logo.png",
+        "altText": "Logo Debian",
+        "category": "Software"
+    },
+
+    {
+        "name": "LPIC",
+        "image": "./images/linux-logo.png",
+        "altText": "Logo Linux",
         "category": "Software"
     },
     {
@@ -84,7 +115,7 @@
         "category": "Language"
     },
     {
-        "name": "Anglais",
+        "name": "Anglais C1",
         "image": "./images/england-icon.png",
         "altText": "Drapeau Anglais",
         "category": "Language"

@@ -1,5 +1,20 @@
 [
     {
+        "title": "SupKonQuest",
+        "image": "./images/supkonquest.png",
+        "alt": null,
+        "startdate": "2025-12",
+        "enddate": "2026-05",
+        "time": "2 semaines",
+        "affiliation": "SUPINFO",
+        "technologies": [
+            ["JAVA", true],
+            ["Git/GitHub", false]
+        ],
+        "smalldescription": "Application permettant aux utilisateurs d'accéder aux informations relatives au stock de leur magasin et d'ajouter ou de retirer des articles.",
+        "link": ["projet sur GitHub", null]
+    },
+    {
         "title": "IStore",
         "image": "./images/istore.png",
         "alt": null,
