@@ -67,7 +67,7 @@ section {
 .card img {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
     border-radius: 10px 10px 0 0;
 }
 

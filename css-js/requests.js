@@ -23,7 +23,7 @@ function displayProjects(projects) {
         div.className = "card";
 
         const img = document.createElement('img');
-        img.src = "https://placehold.co/600x400";
+        img.src = project.image == null ? "https://placehold.co/600x400" : project.image;
         img.alt = "placeholder";
 
         const title = document.createElement('h3');
